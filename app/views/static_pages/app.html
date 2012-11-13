@@ -1,0 +1,93 @@
+   
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div id="header" data-theme="a" data-role="header">
+        <h3>
+            Header
+        </h3>
+    </div>
+    <div data-role="content">
+        <div style="width: auto; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+
+            <img src="/home/igor/room.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
+        </div>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-mini="true">
+                <label for="email">
+                </label>
+                <input name="" id="email" placeholder="Электронная почта" value="" type="email" />
+            </fieldset>
+        </div>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-mini="true">
+                <label for="password">
+                </label>
+                <input name="" id="password" placeholder="Пароль" value="" type="password" />
+            </fieldset>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a" id="left-place">
+                <h4 id="remember-me">
+                    Запомнить меня
+                </h4>
+            </div>
+            <div class="ui-block-b" id="right-place">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="switch-button">
+                        </label>
+                        <select name="toggleswitch5" id="switch-button" data-theme="" data-role="slider" data-mini="true">
+                            <option value="off">
+                                Off
+                            </option>
+                            <option value="on">
+                                On
+                            </option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <a id="sign-in" data-role="button" data-transition="pop" data-theme="b" href="#page1">
+            Войти
+        </a>
+        <a id="sign-up" data-role="button" href="#page1">
+            Зарегестрироваться
+        </a>
+        <a id="remember" data-role="button" data-transition="slide" href="#page1">
+            Напомнить
+        </a>
+
+        <div id="text">Сегодня на "Уолстер" предоставлены товары и услуги известных поставщиков, в том числе:</div>
+        <div id="frame" class="ui-grid-b">
+            <div class="ui-block-a">
+                <%= link_to {image_tag "blackberry.png"}%>
+            </div>
+            <div class="ui-block-b">
+                <%= link_to {image_tag "beeline.png"}%>
+            </div>
+            <div class="ui-block-c">
+                <%= link_to {image_tag "1c.png"}%>
+            </div>
+            <div class="ui-block-a">
+                <%= link_to {image_tag "novikov.png"}%>
+            </div>
+            <div class="ui-block-b">
+                <%= link_to {image_tag "rosinter.png"}%>
+            </div>
+            <div class="ui-block-c">
+                <%= link_to {image_tag "spartak.png"}%>
+            </div>
+        </div>
+    </div>
+    <div id="footer" data-theme="a" data-role="footer">
+       <div ><%= link_to {image_tag "label1.png"}%>
+       <%= link_to {image_tag "label2.png"}%>
+       <%= link_to {image_tag "label3.png"}%>
+       <%= link_to {image_tag "label4.png"}%></div>
+    </div>
+</div>
+<script>
+    //App custom javascript
+</script>
+    
